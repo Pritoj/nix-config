@@ -5,6 +5,7 @@
     ./modules/shell.nix
     ./modules/neovim.nix
     ./modules/git.nix
+    ./modules/tmux.nix
   ];
 
   home = {
