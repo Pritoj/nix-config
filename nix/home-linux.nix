@@ -1,7 +1,9 @@
 { config, pkgs, ... }:
 
 {
-  imports = [];
+  imports = [
+    ./modules/shell.nix
+  ];
 
   home = {
     username = "pritojs";
