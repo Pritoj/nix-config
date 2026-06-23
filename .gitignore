@@ -1,0 +1,6 @@
+# Nix build artifacts
+result
+result-*
+
+# Flake lock (optional — uncomment to track it)
+flake.lock
