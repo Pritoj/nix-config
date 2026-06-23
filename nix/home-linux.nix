@@ -3,6 +3,7 @@
 {
   imports = [
     ./modules/shell.nix
+    ./modules/neovim.nix
     ./modules/git.nix
   ];
 
