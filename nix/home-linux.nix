@@ -12,4 +12,13 @@
   };
 
   programs.home-manager.enable = true;
+
+  programs.git = {
+    enable = true;
+    settings = {
+      user.name = "Pritoj Singh";
+      user.email = "pritojs@gmail.com";
+    };
+  };
+
 }
