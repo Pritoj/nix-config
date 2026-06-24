@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ config, pkgs, ... }:
 
 {
   programs.zsh = {
@@ -40,7 +40,7 @@
 
   programs.fzf = {
     enable = true;
-    enableZshIntegration =true;
+    enableZshIntegration = true;
   };
 
   programs.starship = {
@@ -48,4 +48,3 @@
     enableZshIntegration = true;
   };
 }
-

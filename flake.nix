@@ -14,13 +14,20 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, nixvim, ... }: {
-    homeConfigurations."home-linux" = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.x86_64-linux;
-      modules = [ 
-        ./nix/home-linux.nix 
-	nixvim.homeModules.nixvim
-      ];
+  outputs =
+    {
+      nixpkgs,
+      home-manager,
+      nixvim,
+      ...
+    }:
+    {
+      homeConfigurations."home-linux" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        modules = [
+          ./nix/home-linux.nix
+          nixvim.homeModules.nixvim
+        ];
+      };
     };
-  };
 }

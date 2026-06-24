@@ -4,9 +4,17 @@
     settings = {
       keymap = {
         preset = "default";
-        "<CR>" = [ "accept" "fallback" ];
+        "<CR>" = [
+          "accept"
+          "fallback"
+        ];
       };
-      sources.default = [ "lsp" "path" "buffer" "snippets" ];
+      sources.default = [
+        "lsp"
+        "path"
+        "buffer"
+        "snippets"
+      ];
       completion.documentation.auto_show = true;
       signature.enabled = true;
     };
