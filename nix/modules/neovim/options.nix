@@ -16,6 +16,10 @@
       signcolumn = "yes";
       clipboard = "unnamedplus";
       updatetime = 100;
+      foldcolumn = "1";
+      foldlevel = 99;
+      foldlevelstart = 99;
+      foldenable = true;
     };
 
     globals = {

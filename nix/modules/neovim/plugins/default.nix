@@ -5,5 +5,6 @@
     ./formatters.nix
     ./ui.nix
     ./navigation.nix
+    ./ufo.nix
   ];
 }
