@@ -1,8 +1,9 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   # Nix configuration
   nix.enable = true;
+  nix.settings.experimental-features = "nix-command flakes";
 
   # Platform configuration
   nixpkgs.hostPlatform = "aarch64-darwin";
