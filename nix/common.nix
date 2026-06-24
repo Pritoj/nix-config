@@ -1,3 +1,5 @@
+{ ... }:
+
 {
   imports = [
     ./modules/shell.nix

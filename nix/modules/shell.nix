@@ -47,4 +47,27 @@
     enable = true;
     enableZshIntegration = true;
   };
+
+  # Common CLI tools to enable across Linux and macOS
+  programs.bat.enable = true;
+  programs.fd.enable = true;
+  programs.ripgrep.enable = true;
+  programs.jq.enable = true;
+  programs.htop.enable = true;
+
+  home.packages = with pkgs; [
+    ack
+    exiftool
+    ffmpeg
+    glow
+    imagemagick
+    opentofu
+    taskwarrior3
+    taskwarrior-tui
+    toipe
+    tree
+    watch
+    wget
+  ];
+
 }
