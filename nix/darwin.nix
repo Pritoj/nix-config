@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 
 {
   imports = [
@@ -10,6 +10,11 @@
 
   # Platform configuration
   nixpkgs.hostPlatform = "aarch64-darwin";
+  nixpkgs.config.allowUnfreePredicate =
+    pkg:
+    builtins.elem (lib.getName pkg) [
+      "antigravity-cli"
+    ];
 
   # Define user account details for nix-darwin
   users.users.pritojs = {

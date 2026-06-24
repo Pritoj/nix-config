@@ -1,8 +1,9 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   imports = [
     ./common.nix
+    ./modules/antigravity.nix
   ];
 
   home = {
