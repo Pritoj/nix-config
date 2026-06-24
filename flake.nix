@@ -12,13 +12,20 @@
     nixvim = {
       url = "github:nix-community/nixvim";
     };
+
+    darwin = {
+      url = "github:LnL7/nix-darwin";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
     {
+      self,
       nixpkgs,
       home-manager,
       nixvim,
+      darwin,
       ...
     }:
     {
