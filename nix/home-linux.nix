@@ -2,10 +2,7 @@
 
 {
   imports = [
-    ./modules/shell.nix
-    ./modules/neovim
-    ./modules/git.nix
-    ./modules/tmux.nix
+    ./common.nix
   ];
 
   home = {
