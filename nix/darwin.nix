@@ -3,6 +3,7 @@
 {
   imports = [
     ./modules/homebrew.nix
+    ./modules/system.nix
   ];
   # Nix configuration
   nix.enable = true;
@@ -24,12 +25,6 @@
 
   # Configure primary user for system defaults migration
   system.primaryUser = "pritojs";
-
-  # Example system settings (adjust as preferred)
-  system.defaults = {
-    dock.autohide = true;
-    finder.AppleShowAllExtensions = true;
-  };
 
   # Used for backwards compatibility
   system.stateVersion = 6;
