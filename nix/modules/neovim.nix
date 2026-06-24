@@ -1,21 +1,17 @@
 { pkgs, ...}:
 
 {
-  programs.neovim = {
+  programs.nixvim = {
     enable = true;
     defaultEditor = true;
+    nixpkgs.pkgs = pkgs;
   };
 
   home.packages = with pkgs; [
-    # Build deps for treesitter parser compilation
-    gcc
-    gnumake
-    nodejs
-    unzip
-
-    # Neovim deps
     ripgrep
     fd
-    ripgrep
+    lazygit
   ];
 }
+
+
