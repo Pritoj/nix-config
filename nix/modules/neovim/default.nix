@@ -5,6 +5,7 @@
     ./options.nix
     ./lsp.nix
     ./plugins
+    ./keymaps.nix
   ];
 
   programs.nixvim = {
