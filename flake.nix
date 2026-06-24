@@ -36,5 +36,23 @@
           nixvim.homeModules.nixvim
         ];
       };
+
+      darwinConfigurations."home-mac" = darwin.lib.darwinSystem {
+        modules = [
+          ./nix/darwin.nix
+          home-manager.darwinModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "backup";
+            home-manager.users.pritojs = {
+              imports = [
+                ./nix/home-mac.nix
+                nixvim.homeModules.nixvim
+              ];
+            };
+          }
+        ];
+      };
     };
 }
