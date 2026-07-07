@@ -68,6 +68,7 @@
     tree
     watch
     wget
+    pandoc
   ];
 
 }
