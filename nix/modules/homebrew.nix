@@ -11,7 +11,6 @@
     casks = [
       "alacritty"
       "android-platform-tools"
-      "ghostty"
       "keepingyouawake"
       "ollama-app"
       "openmtp"

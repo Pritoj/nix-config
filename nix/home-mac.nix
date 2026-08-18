@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -11,6 +11,12 @@
     homeDirectory = "/Users/pritojs";
     stateVersion = "26.05";
   };
+  home.packages = with pkgs; [
+    cook-cli
+    yt-dlp
+    spotdl
+    ghostty-bin
+  ];
 
   programs.git = {
     enable = true;
