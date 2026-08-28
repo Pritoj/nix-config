@@ -54,6 +54,11 @@
   programs.ripgrep.enable = true;
   programs.jq.enable = true;
   programs.htop.enable = true;
+  programs.direnv = {
+    enable = true;
+    enableZshIntegration = true;
+    nix-direnv.enable = true;
+  };
 
   home.packages = with pkgs; [
     ack
