@@ -35,6 +35,7 @@
       gtat = "git status";
       glog = "git log";
       glogol = "git log --oneline";
+      gl = "git pull";
     };
   };
 
