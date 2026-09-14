@@ -4,7 +4,7 @@
 
     lsp.servers = {
       lua_ls.enable = true;
-      tsgo.enable = true;
+      typescript.enable = true;
       bashls.enable = true;
       jsonls.enable = true;
       yamlls.enable = true;
